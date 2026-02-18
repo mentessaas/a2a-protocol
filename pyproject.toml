@@ -38,6 +38,7 @@ Issues = "https://github.com/mentessaas/a2a-protocol/issues"
 [project.scripts]
 a2a-directory = "a2a_directory:main"
 a2a-bridge = "a2a_bridge:main"
+a2a = "a2a_cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
