@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#grad1)"/>
+  
+  <!-- Two connected nodes (agents) -->
+  <!-- Left agent -->
+  <circle cx="60" cy="100" r="25" fill="white" opacity="0.95"/>
+  <circle cx="60" cy="100" r="18" fill="url(#grad1)"/>
+  
+  <!-- Right agent -->
+  <circle cx="140" cy="100" r="25" fill="white" opacity="0.95"/>
+  <circle cx="140" cy="100" r="18" fill="url(#grad1)"/>
+  
+  <!-- Connection line -->
+  <line x1="85" y1="100" x2="115" y2="100" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Small nodes on connection -->
+  <circle cx="100" cy="100" r="8" fill="white"/>
+  <circle cx="100" cy="100" r="5" fill="url(#grad1)"/>
+  
+  <!-- A2A text -->
+  <text x="100" y="155" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">A2A</text>
+</svg>
