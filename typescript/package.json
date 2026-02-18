@@ -1,0 +1,21 @@
+{
+  "name": "@org/a2a-sdk",
+  "version": "0.1.0",
+  "description": "A2A Protocol TypeScript SDK",
+  "main": "dist/a2a.js",
+  "types": "dist/a2a.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "node test.mjs"
+  },
+  "keywords": [
+    "a2a",
+    "agent",
+    "protocol"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
