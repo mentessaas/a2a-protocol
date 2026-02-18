@@ -114,6 +114,9 @@ cd a2a-protocol && python -m build && twine upload dist/*
 # npm
 cd typescript && npm run build && npm publish
 
+# Java/Maven
+cd java && mvn clean package && mvn deploy
+
 # Go (automatic via GitHub)
 # No command needed - works via go get
 
