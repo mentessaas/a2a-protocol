@@ -1,20 +1,32 @@
 {
-  "name": "@org/a2a-sdk",
+  "name": "@mentessaas/a2a-protocol",
   "version": "0.1.0",
-  "description": "A2A Protocol TypeScript SDK",
+  "description": "A2A Protocol TypeScript SDK - Open protocol for agent-to-agent communication",
   "main": "dist/a2a.js",
   "types": "dist/a2a.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "test": "node test.mjs"
+    "test": "node test.mjs",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "a2a",
     "agent",
-    "protocol"
+    "protocol",
+    "ai",
+    "multi-agent"
   ],
+  "author": "Mentessa <hello@mentessa.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://essaas/a2github.com/menta-protocol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mentessaas/a2a-protocol/issues"
+  },
+  "homepage": "https://github.com/mentessaas/a2a-protocol",
   "devDependencies": {
     "typescript": "^5.9.3"
   }

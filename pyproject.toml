@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "a2a-protocol"
+version = "0.1.0"
+description = "Open protocol for agent-to-agent communication"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Mentessa", email = "hello@mentessa.com"}
+]
+keywords = ["ai", "agents", "a2a", "protocol", "multi-agent"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["twine", "build"]
+
+[project.urls]
+Homepage = "https://github.com/mentessaas/a2a-protocol"
+Repository = "https://github.com/mentessaas/a2a-protocol"
+Issues = "https://github.com/mentessaas/a2a-protocol/issues"
+
+[project.scripts]
+a2a-directory = "a2a_directory:main"
+a2a-bridge = "a2a_bridge:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["a2a*"]
+
+[tool.setuptools.package-data]
+a2a_protocol = ["*.md"]
